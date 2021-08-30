@@ -8,7 +8,7 @@ export const LegoDetail = (brick) => {
                   <h3>Name: ${brick.LegoName}</h3>
                 </div>
                 <div> ${brick.Notes}</div>
-                <div class="block-years">Manufactured ${1 + brick.YearTo - brick.YearFrom} years, ${brick.YearFrom} - ${brick.YearTo}</div>
+                <div class="block-years">Manufactured ${brick.YearTo - brick.YearFrom} years, ${brick.YearFrom} - ${brick.YearTo}</div>
               </section>`;
   
 
