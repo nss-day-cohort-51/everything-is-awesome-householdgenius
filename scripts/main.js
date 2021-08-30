@@ -1,7 +1,7 @@
 console.log("hello beautiful");
 import { loadLegos, useLegos } from './legos/LegoData.js';
 import { makeLegoList } from './legos/LegoList.js';
-
+import { BuildersBio } from './bio/BuildersBio.js';
 const navElement = document.querySelector("nav");
 
 navElement.addEventListener("click", (event) => {
@@ -32,3 +32,4 @@ const startEIA = () => {
 }
 
 startEIA();
+BuildersBio ();
