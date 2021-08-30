@@ -27,4 +27,16 @@ export const invertColor = (hex) => {
  
   export function allLetterCase(str) {
     return (str.toUpperCase());
+
+
 }
+export const checkYears = (taco) => {	
+	const varName = 1 +(taco.YearTo - taco.YearFrom )
+	if (varName > 1){
+
+			return varName + " years,";  
+	} else {
+		return "";
+		}
+	
+	}
