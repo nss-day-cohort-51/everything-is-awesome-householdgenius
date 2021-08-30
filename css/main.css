@@ -36,6 +36,9 @@ nav {
 /* Lego block details styles */
 article a {
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .block-wrapper {
@@ -63,6 +66,10 @@ article a {
 aside article {
   background-image: linear-gradient(45deg, #efffd1 25%, #ffffff 25%, #ffffff 50%, #efffd1 50%, #efffd1 75%, #ffffff 75%, #ffffff 100%);
   background-size: 56.57px 56.57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+ 
 }
 .bio_image {
   width: 100%;
@@ -91,4 +98,8 @@ aside article {
   background-color: pink;
   padding: .5em;
   margin-bottom: 0;
+}
+.main {
+  display: flex;
+  flex-direction: row;
 }

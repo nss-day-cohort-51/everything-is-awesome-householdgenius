@@ -1,6 +1,6 @@
 export const BuildersBio = () => {
 	return `
-	<article>
+	<article class = "aboutBuilders">
 		<h2 class="bio_name">Lucy (Wyldstyle)</h2>
 		<div>
 			<div>
