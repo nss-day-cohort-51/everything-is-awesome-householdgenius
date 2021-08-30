@@ -1,11 +1,12 @@
 import { invertColor } from './../helpers.js';
+import { allLetterCase } from './../helpers.js';
 export const LegoDetail = (brick) => {
   const link = brick.ColorstreamLinkImage;
 
   let block = `<section style="background-color:#${brick.ColorHex}">
                 <div class="blockname">
                   ${link ? `<div><img src="./images/legoblock.png"></div>` : ""}
-                  <h3>Name: ${brick.LegoName}</h3>
+                  <h3>Name: ${allLetterCase(brick.LegoName)}</h3>
                 </div>
                 <div> ${brick.Notes}</div>
                 <div class="block-years">Manufactured ${brick.YearTo - brick.YearFrom} years, ${brick.YearFrom} - ${brick.YearTo}</div>
