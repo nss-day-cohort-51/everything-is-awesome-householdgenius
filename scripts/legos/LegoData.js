@@ -22,7 +22,7 @@ export const loadMaterials = () => {
   return fetch("../data/lego-colors.json")
     .then(response => response.json())
     .then((legoArray) => {
-      apiLegos2 = legoArray.LegoColorss.Material;
-      return legoArray.LegoColorss.Material;
+      apiLegos2 = legoArray.Material;
+      return legoArray.Material;
     })
 };

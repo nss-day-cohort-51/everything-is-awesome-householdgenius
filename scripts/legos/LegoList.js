@@ -2,7 +2,7 @@ import { LegoDetail } from './LegoDetail.js';
 
 export const makeLegoList = (legosArray) => {
   render(legosArray)
-};
+}
 
 const render = (legoData) => {
   	const legoDisplay = document.querySelector("#all-legos");
