@@ -25,3 +25,6 @@ export const invertColor = (hex) => {
 	return (zeros + str).slice(-len);
   }
  
+  export function allLetterCase(str) {
+    return (str.toUpperCase());
+}
