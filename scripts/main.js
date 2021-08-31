@@ -21,10 +21,30 @@ navElement.addEventListener("click", (event) => {
 	}
 })
 navElement.addEventListener("click", (event) => {
-	if (event.target.id === "showPearl") {
-		filterLegos("Pearl")
-	} else if (event.target.id === "showAll") {
-		makeLegoList(useMaterials());
+	if (event.target.id === "0") {
+		makeLegoList(useLegos())
+	} else if (event.target.value === "1") {
+		filterMaterials("Solid")
+	} else if (event.target.value === "2") {
+	filterMaterials("Transparent")
+	} else if (event.target.value === "3") {
+		filterMaterials("Pearl")
+	} else if (event.target.value === "4") {
+		filterMaterials("Chrome")
+	} else if (event.target.value === "5") {
+		filterMaterials("Metallic")
+	} else if (event.target.value === "6") {
+		filterMaterials("Milky")
+	} else if (event.target.value === "7") {
+		filterMaterials("Glitter")
+	} else if (event.target.value === "8") {
+		filterMaterials("Speckle")
+	} else if (event.target.value === "9") {
+		filterMaterials("Ink")
+	} else if (event.target.value === "10") {
+		filterMaterials("Process")
+	} else if (event.target.value === "11") {
+		filterMaterials("Modulex")
 	}
 })
 
@@ -32,6 +52,14 @@ navElement.addEventListener("click", (event) => {
 const filterLegos = (whatFilter) => {
 	const filterArray = useLegos().filter(singleLego => {
 		if (singleLego.LegoName.includes(whatFilter)) {
+			return singleLego;
+		}
+	})
+	makeLegoList(filterArray);
+}
+const filterMaterials = (whatFilter) => {
+	const filterArray = useLegos().filter(singleLego => {
+		if (singleLego.Material.includes(whatFilter)) {
 			return singleLego;
 		}
 	})

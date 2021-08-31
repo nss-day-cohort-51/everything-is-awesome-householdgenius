@@ -366,3 +366,8 @@ button[class*="btn"] {border: 0;}
 .btn-gradient.purple:active {background: #BD8EB7;}
 .btn-gradient.yellow:active {background: #DBC05B;}
 .btn-gradient.green:active  {background: #72B08E;}
+
+#selectMaterials {
+	background: #BD8EB7;
+	font-size: 17px;
+}
